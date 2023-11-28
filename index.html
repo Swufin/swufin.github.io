@@ -1,56 +1,246 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWUFIN</title>
+<div id="container">
+    <div id="headerArea">
+        <div id="header" style="height: 500px;"></div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Fredoka One', cursive;
-        }
+        <nav id="navbar" style="margin-bottom: 10px;">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Newgrounds</a></li>
+                <li><a href="#">Toyhouse</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        .center {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
+    <div id="flex">
+        <main>
+            <h1>welcome to my website</h1>
+            <p><strong>what's up?</strong></p>
+            <p>hey! my name's swuf. i go by they/them and do a variety of things on the internet \ (•◡•) /</p>
+            <p>i'm a little good at drawing, composing music, sometimes coding! but i aspire to get much better at art the most, though at times i am quite shy about showing my stuffs to other people ;_;</p>
+            <p>anyways, while i don't have much of a significant presence on here, you may have heard of me from <a href="https://www.roblox.com/games/12499078816" target="_blank">sharkco</a>! it's a project i directed with a friend on my free-time.</p>
 
-        a:link, a:visited {
-            background-color: #de5c52;
-            color: black;
-            padding: 0px 0px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
+            <p><strong>here's my interests'</strong></p>
+            <p>i am IMMENSELY hyperfixated on sharkco at the moment ... oh!! ive also been enthusiastic about arcades lately, they're kind of cool!</p>
 
-        a:hover, a:active {
-            background-color: #8b074b;
-        }
-    </style>
-</head>
+            <p><strong>oh yea, <a href="https://toyhou.se/23118131.swu" target="_blank">my sona</a></strong></p>
+            <p>they're a creature with roller skates! all my friends have sonas and i thought it would be cool to make my own as well</p>
+            <img border="0" alt="Drawn by @MashProTato!" src="https://f2.toyhou.se/file/f2-toyhou-se/images/73847451_Oyeuu7F8ldFeMHx.png?1701159327" width="500" height="500">
+            <p>they are also quite fond of beige looking computers & often spend their time chatting with their friends online :]</p>
 
-<body bgcolor=#cdcccb>
-    <audio src="https://github.com/Swufin/swufin.github.io/blob/main/docs/assets/mus/BGM.wav?raw=true" autoplay>
-        <p>If you are reading this, it is because your browser does not support the audio element.</p>
-    </audio>
+            <p><strong>don't interact if...</strong></p>
+            <p>you're homophobic, xenophobic, transphobic, racist, all that bigoted stuff. or, if you are just a literal pedophile LOL</p>
+            <p>changed and kaiju paradise fans tend to discomfort me so please uhh. Stay tf away!</p>
 
-    <div class="center">
-        <a href="https://discord.com/users/792508749997801505">
-            <img border="0" alt="my discord profile" src="https://github.com/Swufin/swufin.github.io/blob/main/docs/assets/img/whitespace.png?raw=true" width="500" height="500">
-        </a>
+            <script type="text/javascript" src="//counter.websiteout.net/js/7/0/0/0"></script>
+        </main>
 
-        <h5 style="color: #de5c52; ">
-            swufin - they/them - 16
-        </h5>
+        <aside id="leftSidebar" style="margin-right: 10px;">
+            <h2>Updates</h2>
+            <div class="box">
+                <p>last updated november 2023!</p>
+                <ul style="padding-left:10px;">
+                    <li>created a little about-me section, planning on doing more!</li>
+                </ul>
+            </div>
+            <h2>hi there!</h2>
+            <p>uhh i'll put something here soon</p>
+            <h3>other sites</h3>
+            <ul>
+                <li>
+                    <a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
+                </li>
+                <li><a href="https://sadgrl.online/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
+                <li><a href="https://sadgrl.online/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
+                <li><a href="https://sadgrl.online/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
+                <li><a href="https://sadgrl.online/projects/ideas/" target="_blank">Site Ideas</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer id="footer" style="margin-top: 10px;"></footer>
 </div>
-</body>
-</html>
+
+<!-- css !-->
+<style>
+    :root {
+        --header-image: url('https://github.com/Swufin/swufin.github.io/blob/main/docs/assets/img/Header.png?raw=true');
+        --body-bg-image: url('https://github.com/Swufin/swufin.github.io/blob/main/docs/assets/img/TileAlien.png?raw=true');
+        --content: #1e203e;
+    }
+
+    @font-face {
+        font-family: Gotham;
+        src: url('https://github.com/Swufin/swufin.github.io/blob/main/docs/assets/fonts/GothamBook.otf');
+    }
+
+    @font-face {
+        font-family: Gotham;
+        src: url('https://github.com/Swufin/swufin.github.io/blob/main/docs/assets/fonts/GothamBold.otf');
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: Gotham;
+        src: url('https://github.com/Swufin/swufin.github.io/blob/main/docs/assets/fonts/GothamItalic.otf');
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    body {
+        font-family: 'Gotham', sans-serif;
+        margin: 0;
+        background-color: #08031A;
+        background-size: 65px;
+        color: #fceaff;
+        background-image: var(--body-bg-image);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    #container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+        #container a {
+            color: #ffb763;
+            font-weight: bold;
+        }
+
+    #header {
+        width: 100%;
+        background-color: #5e4e8c;
+        height: 150px;
+        background-image: var(--header-image);
+        background-size: 100%;
+    }
+
+    #navbar {
+        height: 40px;
+        background-color: #1e203e;
+        width: 100%;
+    }
+
+        #navbar ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+
+        #navbar li {
+            padding-top: 10px;
+        }
+
+            #navbar li a {
+                color: #ffb763;
+                font-weight: 800;
+                text-decoration: none;
+            }
+
+                #navbar li a:hover {
+                    color: #a49cba;
+                    text-decoration: underline;
+                }
+
+    #flex {
+        display: flex;
+    }
+
+    aside {
+        background-color: #2a3249;
+        width: 200px;
+        padding: 20px;
+        font-size: smaller;
+    }
+
+    main {
+        background-color: #2a3249;
+        flex: 1;
+        padding: 20px;
+        order: 2;
+    }
+
+    */ #leftSidebar {
+        order: 1;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    footer {
+        background-color: #1e203e;
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #ffb763;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    strong {
+        color: #ffb763;
+    }
+
+    .box {
+        background-color: #1e203e;
+        border: 1px solid #ffb763;
+        padding: 10px;
+    }
+
+    #topBar {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        font-size: smaller;
+        background-color: #13092D;
+    }
+
+    @media only screen and (max-width: 800px) {
+        #flex {
+            flex-wrap: wrap;
+        }
+
+        aside {
+            width: 100%;
+        }
+        main {
+            order: 1;
+        }
+
+        #leftSidebar {
+            order: 2;
+        }
+
+        #rightSidebar {
+            order: 3;
+        }
+
+        #navbar ul {
+            flex-wrap: wrap;
+        }
+    }
+</style>
+
