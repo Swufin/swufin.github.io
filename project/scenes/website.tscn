@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://vt6mujwx11te"]
 
 [ext_resource type="Script" uid="uid://bm8wlssc0prkh" path="res://scripts/website.gd" id="1_p2wnk"]
-[ext_resource type="PackedScene" uid="uid://dokw36l6gsn17" path="res://scenes/background.tscn" id="1_xqv5d"]
+[ext_resource type="PackedScene" uid="uid://dokw36l6gsn17" path="res://scenes/world/background.tscn" id="1_xqv5d"]
 [ext_resource type="AudioStream" uid="uid://cpyvdb50vyyms" path="res://assets/assets/sounds/music/horseSteppin.ogg" id="2_dptrp"]
 [ext_resource type="Texture2D" uid="uid://bcje74f1bj4k3" path="res://assets/textures/ramsey.png" id="2_x8v1w"]
-[ext_resource type="Script" uid="uid://8rcfs7l085x0" path="res://scripts/interface.gd" id="3_6hqvq"]
+[ext_resource type="Script" uid="uid://8rcfs7l085x0" path="res://scripts/ui/interface.gd" id="3_6hqvq"]
 [ext_resource type="Shader" uid="uid://bardc4krmmt6x" path="res://shaders/3d_text.gdshader" id="3_dptrp"]
 [ext_resource type="FontFile" uid="uid://c6tlt4fyyr52k" path="res://assets/fonts/AudioNugget.ttf" id="4_6hqvq"]
-[ext_resource type="PackedScene" uid="uid://3tlhh3cb6x6m" path="res://scenes/dialogue.tscn" id="6_ercaa"]
+[ext_resource type="PackedScene" uid="uid://3tlhh3cb6x6m" path="res://scenes/ui/dialogue.tscn" id="6_ercaa"]
 [ext_resource type="Shader" uid="uid://cufpl5ehfv2ul" path="res://shaders/bloom.gdshader" id="8_6hqvq"]
 
 [sub_resource type="Animation" id="Animation_r8iag"]
@@ -84,7 +84,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 2, 4),
-"transitions": PackedFloat32Array(2, 2, 1),
+"transitions": PackedFloat32Array(2, -2, 1),
 "update": 0,
 "values": [Color(0, 0, 0, 1), Color(0.8346143, 0.8346143, 0.8346143, 1), Color(1, 1, 1, 0)]
 }

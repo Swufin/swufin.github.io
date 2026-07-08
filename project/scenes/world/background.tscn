@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dokw36l6gsn17"]
 
-[ext_resource type="Script" uid="uid://g18sjxgciuj5" path="res://scripts/background.gd" id="1_bkp1e"]
+[ext_resource type="Script" uid="uid://g18sjxgciuj5" path="res://scripts/world/background.gd" id="1_bkp1e"]
 [ext_resource type="Texture2D" uid="uid://ccgb8oan5t85b" path="res://icon.svg" id="2_y0upk"]
 
 [node name="Background" type="Node2D" unique_id=1327486020]
