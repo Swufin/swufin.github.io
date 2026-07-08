@@ -1,0 +1,40 @@
+# godot 4+ specific ignores
+.godot/
+.nomedia
+
+# godot-specific ignores
+.import/
+export.cfg
+export_credentials.cfg
+
+# imported translations
+*.translation
+
+# blender files
+*.blend1
+*.blend2
+*.blend3
+*.blend4
+*.blend5
+*.blend~
+*.blend@
+*.bphys
+*.bphys1
+*.bphys2
+
+# blender cache / simulation / bake data
+*.bphys-cache/
+*.fluid/
+*.mdd/
+*.pc2/
+*.pysimd/
+
+# blender autosave files
+*.blend1~
+*.blend2~
+*.blend3~
+
+# mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json

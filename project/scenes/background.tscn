@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dokw36l6gsn17"]
+
+[ext_resource type="Script" uid="uid://g18sjxgciuj5" path="res://scripts/background.gd" id="1_bkp1e"]
+[ext_resource type="Texture2D" uid="uid://ccgb8oan5t85b" path="res://icon.svg" id="2_y0upk"]
+
+[node name="Background" type="Node2D" unique_id=1327486020]
+script = ExtResource("1_bkp1e")
+
+[node name="Sky" type="Parallax2D" parent="." unique_id=1180156266]
+scroll_scale = Vector2(0, 1)
+scroll_offset = Vector2(270, 0)
+
+[node name="Icon" type="Sprite2D" parent="Sky" unique_id=1595711131]
+position = Vector2(0, -64)
+scale = Vector2(2, 2)
+texture = ExtResource("2_y0upk")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1791894565]
+repeat_size = Vector2(128, 0)
+repeat_times = 17
+
+[node name="Icon" type="Sprite2D" parent="Parallax2D" unique_id=457640673]
+texture = ExtResource("2_y0upk")
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1716022526]
+scroll_scale = Vector2(0.5, 1)
+scroll_offset = Vector2(0, 40)
+repeat_size = Vector2(128, 0)
+repeat_times = 17
+
+[node name="Icon" type="Sprite2D" parent="Parallax2D2" unique_id=1467446362]
+position = Vector2(0, -8)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_y0upk")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=528630797]
+ignore_rotation = false
