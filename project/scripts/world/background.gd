@@ -11,5 +11,3 @@ func _process(delta):
 
 	var offset = sin(time * speed) * amplitude
 	camera.rotation = offset
-	
-	camera.position.x += 0.1

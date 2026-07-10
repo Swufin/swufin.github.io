@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://bm8wlssc0prkh" path="res://scripts/website.gd" id="1_p2wnk"]
 [ext_resource type="PackedScene" uid="uid://dokw36l6gsn17" path="res://scenes/world/background.tscn" id="1_xqv5d"]
-[ext_resource type="AudioStream" uid="uid://cpyvdb50vyyms" path="res://assets/assets/sounds/music/horseSteppin.ogg" id="2_dptrp"]
+[ext_resource type="AudioStream" uid="uid://cpyvdb50vyyms" path="res://assets/sounds/music/horseSteppin.ogg" id="2_dptrp"]
 [ext_resource type="Texture2D" uid="uid://bcje74f1bj4k3" path="res://assets/textures/ramsey.png" id="2_x8v1w"]
 [ext_resource type="Script" uid="uid://8rcfs7l085x0" path="res://scripts/ui/interface.gd" id="3_6hqvq"]
 [ext_resource type="Shader" uid="uid://bardc4krmmt6x" path="res://shaders/3d_text.gdshader" id="3_dptrp"]
 [ext_resource type="FontFile" uid="uid://c6tlt4fyyr52k" path="res://assets/fonts/AudioNugget.ttf" id="4_6hqvq"]
-[ext_resource type="PackedScene" uid="uid://3tlhh3cb6x6m" path="res://scenes/ui/dialogue.tscn" id="6_ercaa"]
+[ext_resource type="PackedScene" uid="uid://3tlhh3cb6x6m" path="res://scenes/ui/message.tscn" id="6_ercaa"]
 [ext_resource type="Shader" uid="uid://cufpl5ehfv2ul" path="res://shaders/bloom.gdshader" id="8_6hqvq"]
 
 [sub_resource type="Animation" id="Animation_r8iag"]
@@ -404,7 +404,7 @@ offset_top = 0.0
 offset_bottom = 0.0
 grow_horizontal = 2
 grow_vertical = 2
-lines = Array[String](["Hello.", "It's me, your best friend.", "Real nice things are coming soon, by the way.", "Also, this website is under construction, so stay tuned!", "I'm trying my best."])
+lines = Array[String](["Howdy!", "It's me, your best friend.", "Real nice things are coming soon, by the way.", "Also, this website is under construction, so stay tuned!", "I'm trying my best."])
 
 [node name="VHSFilter" type="ColorRect" parent="Interface" unique_id=683320068]
 material = SubResource("ShaderMaterial_6hqvq")

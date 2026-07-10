@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://3tlhh3cb6x6m"]
 
-[ext_resource type="Script" uid="uid://d1x1m52u04a33" path="res://scripts/ui/dialogue.gd" id="1"]
-[ext_resource type="AudioStream" uid="uid://352mapesr647" path="res://assets/assets/sounds/click.mp3" id="2_fyky8"]
-[ext_resource type="AudioStream" uid="uid://cc12nt516stlf" path="res://assets/assets/sounds/ping.ogg" id="3_led2e"]
+[ext_resource type="Script" uid="uid://d1x1m52u04a33" path="res://scripts/ui/message.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://352mapesr647" path="res://assets/sounds/click.mp3" id="2_fyky8"]
+[ext_resource type="AudioStream" uid="uid://cc12nt516stlf" path="res://assets/sounds/ping.ogg" id="3_led2e"]
 [ext_resource type="FontFile" uid="uid://bbgmd7l0drrg4" path="res://assets/fonts/FuturaCyrillicBook.ttf" id="4"]
 
 [sub_resource type="Animation" id="Animation_bfpow"]

@@ -2,35 +2,191 @@
 
 [ext_resource type="Script" uid="uid://g18sjxgciuj5" path="res://scripts/world/background.gd" id="1_bkp1e"]
 [ext_resource type="Texture2D" uid="uid://ccgb8oan5t85b" path="res://icon.svg" id="2_y0upk"]
+[ext_resource type="Texture2D" uid="uid://cql7g77onlsh8" path="res://assets/textures/Towers.png" id="3_rsh60"]
+
+[sub_resource type="Gradient" id="Gradient_rsh60"]
+offsets = PackedFloat32Array(0, 0.49, 0.5)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.8853755, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_78b2h"]
+gradient = SubResource("Gradient_rsh60")
+width = 200
+height = 200
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rn60d"]
+atlas = ExtResource("3_rsh60")
+region = Rect2(0, 0, 16, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8e1p"]
+atlas = ExtResource("3_rsh60")
+region = Rect2(33, 0, 10, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsh60"]
+atlas = ExtResource("3_rsh60")
+region = Rect2(17, 0, 15, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyv4m"]
+atlas = ExtResource("3_rsh60")
+region = Rect2(44, 0, 24, 48)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_rsh60"]
+
+[sub_resource type="Gradient" id="Gradient_h8e1p"]
+offsets = PackedFloat32Array(0.6166008, 1)
+colors = PackedColorArray(0.3019608, 0.3019608, 0.3019608, 1, 0.3019608, 0.3019608, 0.3019608, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gyv4m"]
+gradient = SubResource("Gradient_h8e1p")
+fill_from = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="Gradient_rn60d"]
+offsets = PackedFloat32Array(0, 0.5335968, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g4v7s"]
+gradient = SubResource("Gradient_rn60d")
+fill_from = Vector2(1, 1)
 
 [node name="Background" type="Node2D" unique_id=1327486020]
 script = ExtResource("1_bkp1e")
 
 [node name="Sky" type="Parallax2D" parent="." unique_id=1180156266]
-scroll_scale = Vector2(0, 1)
-scroll_offset = Vector2(270, 0)
+scroll_scale = Vector2(0, 0.01)
+scroll_offset = Vector2(250, 220)
 
-[node name="Icon" type="Sprite2D" parent="Sky" unique_id=1595711131]
-position = Vector2(0, -64)
+[node name="Sun" type="Sprite2D" parent="Sky" unique_id=1595711131]
+texture_filter = 1
 scale = Vector2(2, 2)
-texture = ExtResource("2_y0upk")
+texture = SubResource("GradientTexture2D_78b2h")
 
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1791894565]
-repeat_size = Vector2(128, 0)
+[node name="Towers" type="Parallax2D" parent="." unique_id=1791894565]
+scroll_scale = Vector2(0.1, 0.1)
+scroll_offset = Vector2(0, 300)
+repeat_size = Vector2(226.58, 0)
+autoscroll = Vector2(10, 0)
 repeat_times = 17
 
-[node name="Icon" type="Sprite2D" parent="Parallax2D" unique_id=457640673]
-texture = ExtResource("2_y0upk")
+[node name="Tower" type="Sprite2D" parent="Towers" unique_id=831294399]
+modulate = Color(0.45452422, 0.45452428, 0.45452422, 1)
+texture_filter = 1
+position = Vector2(-41.53, -8)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_rn60d")
 
-[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1716022526]
-scroll_scale = Vector2(0.5, 1)
-scroll_offset = Vector2(0, 40)
-repeat_size = Vector2(128, 0)
+[node name="Tower02" type="Sprite2D" parent="Towers" unique_id=956500767]
+modulate = Color(0.45452422, 0.45452428, 0.45452422, 1)
+texture_filter = 1
+position = Vector2(4.94, -8)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_h8e1p")
+
+[node name="Tower03" type="Sprite2D" parent="Towers" unique_id=10207299]
+modulate = Color(0.45452422, 0.45452428, 0.45452422, 1)
+texture_filter = 1
+position = Vector2(50.485, -8)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_rsh60")
+
+[node name="Tower04" type="Sprite2D" parent="Towers" unique_id=690145126]
+modulate = Color(0.45452422, 0.45452428, 0.45452422, 1)
+texture_filter = 1
+position = Vector2(118.255, -8)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_gyv4m")
+
+[node name="Towers2" type="Parallax2D" parent="." unique_id=262747108]
+scroll_scale = Vector2(0.1, 0.1)
+scroll_offset = Vector2(0, 300)
+repeat_size = Vector2(226.58, 0)
+autoscroll = Vector2(25, 0)
 repeat_times = 17
 
-[node name="Icon" type="Sprite2D" parent="Parallax2D2" unique_id=1467446362]
+[node name="Tower" type="Sprite2D" parent="Towers2" unique_id=449726924]
+texture_filter = 1
 position = Vector2(0, -8)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_rn60d")
+
+[node name="Tower02" type="Sprite2D" parent="Towers2" unique_id=1005554056]
+texture_filter = 1
+position = Vector2(100, -8)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_h8e1p")
+
+[node name="Tower03" type="Sprite2D" parent="Towers2" unique_id=1668270828]
+texture_filter = 1
+position = Vector2(50.485, -8)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_rsh60")
+
+[node name="Tower04" type="Sprite2D" parent="Towers2" unique_id=51901347]
+texture_filter = 1
+position = Vector2(160.325, -8)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_gyv4m")
+
+[node name="Tower2" type="Sprite2D" parent="Towers2" unique_id=1574247938]
+self_modulate = Color(1, 1, 1, 0.21176471)
+texture_filter = 1
+position = Vector2(5.722046e-06, 136)
+rotation = 3.1415927
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_rn60d")
+
+[node name="Tower05" type="Sprite2D" parent="Towers2" unique_id=1288403448]
+self_modulate = Color(1, 1, 1, 0.21176471)
+texture_filter = 1
+position = Vector2(100.00001, 136)
+rotation = 3.1415927
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_h8e1p")
+
+[node name="Tower06" type="Sprite2D" parent="Towers2" unique_id=1606963553]
+self_modulate = Color(1, 1, 1, 0.21176471)
+texture_filter = 1
+position = Vector2(50.48501, 136)
+rotation = 3.1415927
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_rsh60")
+
+[node name="Tower07" type="Sprite2D" parent="Towers2" unique_id=202256401]
+self_modulate = Color(1, 1, 1, 0.21176471)
+texture_filter = 1
+position = Vector2(160.325, 136)
+rotation = 3.1415927
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_gyv4m")
+
+[node name="Lake" type="Parallax2D" parent="." unique_id=629721523]
+scroll_scale = Vector2(1, 0.1)
+scroll_offset = Vector2(0, 300)
+repeat_size = Vector2(1152, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Lake" unique_id=311313681]
+material = SubResource("CanvasItemMaterial_rsh60")
+position = Vector2(0, 196)
+scale = Vector2(18, 4.125)
+texture = SubResource("GradientTexture2D_gyv4m")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Lake" unique_id=526683352]
+modulate = Color(1, 1, 1, 0.23529412)
+material = SubResource("CanvasItemMaterial_rsh60")
+position = Vector2(0, 196)
+scale = Vector2(18, 4.125)
+texture = SubResource("GradientTexture2D_g4v7s")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=2091340356]
+visible = false
+repeat_size = Vector2(370, 0)
+autoscroll = Vector2(1000, 0)
+repeat_times = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1882256828]
+position = Vector2(-4, 264)
+scale = Vector2(2.9375, 1)
 texture = ExtResource("2_y0upk")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=528630797]
